@@ -7,4 +7,9 @@ namespace :db do
   task :hello do
     puts "hello from Rake!"
   end
+
+  desc 'seed the database with dummy data'
+  task :seed do
+    require_relative './db/seeds.rb'
+  end
 end
